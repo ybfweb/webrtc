@@ -1,5 +1,5 @@
 <template>
   <div>
-    home
+    <n-button type="warning">Default</n-button>
   </div>
 </template> 
