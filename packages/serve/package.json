@@ -1,0 +1,24 @@
+{
+  "name": "webrtc-serve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serve.ts",
+  "scripts": {
+    "dev": "nodemon -e ts --exec ts-node ./serve.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@socket.io/admin-ui": "^0.5.1",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  }
+}

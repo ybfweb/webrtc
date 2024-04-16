@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:client": "pnpm --filter webrtc-client run dev",
+    "dev:serve": "pnpm --filter webrtc-serve run dev"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC"
 }
