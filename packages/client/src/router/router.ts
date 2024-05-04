@@ -6,5 +6,13 @@ export const router = createRouter({
       path: '/',
       component: () => import('@/views/Home.vue'),
     },
+    {
+      path: '/client',
+      component: () => import('@/views/Client.vue'),
+    },
+    {
+      path: '/server',
+      component: () => import('@/views/Server.vue'),
+    },
   ],
 });

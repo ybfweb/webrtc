@@ -4,7 +4,7 @@
   "description": "",
   "main": "serve.ts",
   "scripts": {
-    "dev": "nodemon -e ts --exec ts-node ./serve.ts"
+    "dev": "nodemon -e ts --exec ts-node ./src/serve.ts"
   },
   "author": "",
   "license": "ISC",
