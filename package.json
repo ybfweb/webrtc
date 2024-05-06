@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev:client": "pnpm --filter webrtc-client run dev",
-    "dev:serve": "pnpm --filter webrtc-serve run dev"
+    "dev:serve": "pnpm --filter webrtc-serve run dev",
+    "build:web": "pnpm --filter webrtc-client run build:docker",
+    "build:serve": "pnpm --filter webrtc-serve run build:docker",
+    "build": "npm run build:web && npm run build:serve",
+    "push": "docker push registry.cn-hangzhou.aliyuncs.com/ybfweb/webrtc:webrtc-client && docker push registry.cn-hangzhou.aliyuncs.com/ybfweb/webrtc:webrtc-serve"
   },
   "keywords": [],
   "author": "",

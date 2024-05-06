@@ -4,7 +4,9 @@
   "description": "",
   "main": "serve.ts",
   "scripts": {
-    "dev": "nodemon -e ts --exec ts-node ./src/serve.ts"
+    "dev": "nodemon -e ts --exec ts-node ./src/serve.ts",
+    "start": "ts-node ./src/serve.ts",
+    "build:docker": "docker build --progress=plain -t registry.cn-hangzhou.aliyuncs.com/ybfweb/webrtc:webrtc-serve ."
   },
   "author": "",
   "license": "ISC",

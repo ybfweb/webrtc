@@ -106,7 +106,7 @@ const iceConfiguration = {
   ]
 }
 
-let localStream: any = null;
+// let localStream: any = null;
 const offerOptions: RTCOfferOptions = {
   offerToReceiveAudio: true,
   offerToReceiveVideo: true
