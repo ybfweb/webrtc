@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "build:docker": "docker build --progress=plain -t registry.cn-hangzhou.aliyuncs.com/ybfweb/webrtc:webrtc-client ."
+    "build:docker": "docker build --progress=plain -t registry.cn-hangzhou.aliyuncs.com/ybfweb/webrtc:webrtc-client_1.2 . --platform=linux/amd64"
   },
   "dependencies": {
     "naive-ui": "^2.38.1",

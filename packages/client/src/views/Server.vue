@@ -82,7 +82,7 @@ const handleValidateClick = (e: MouseEvent) => {
 let socket: Socket;
 const toConnectWebsocket = () => {
   console.log('mounted');
-  socket = io('http://127.0.0.1:3000/signaling', {
+  socket = io('https://webrtc.m771688.cn/signaling', {
     transports: ['websocket'],
     query: {
       userId: formValue.value.userId,
@@ -101,7 +101,12 @@ const toConnectWebsocket = () => {
 const iceConfiguration = {
   iceServers: [
     {
-      urls: 'stun:stun.l.google.com:19302'
+      urls: 'stun:81.68.194.209:30003'
+    },
+    {
+      urls: 'turn:81.68.194.209:30003',
+      username: '1',
+      credential: '1'
     }
   ]
 }
