@@ -9,7 +9,7 @@
     "build:web": "pnpm --filter webrtc-client run build:docker",
     "build:serve": "pnpm --filter webrtc-serve run build:docker",
     "build": "npm run build:web && npm run build:serve",
-    "push": "docker push registry.cn-hangzhou.aliyuncs.com/ybfweb/webrtc:webrtc-client && docker push registry.cn-hangzhou.aliyuncs.com/ybfweb/webrtc:webrtc-serve"
+    "push": "docker push registry.cn-hangzhou.aliyuncs.com/ybfweb/webrtc:webrtc-client_1.2 && docker push registry.cn-hangzhou.aliyuncs.com/ybfweb/webrtc:webrtc-serve_1.0"
   },
   "keywords": [],
   "author": "",
